@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Agent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_action_plan">Action Plan Setup</string>
+    <string name="title_welcome_fragement">Welcome To Agent Mode</string>
+    <string name="title_action_plan_setup">Welcome To Agent Mode</string>
+    <string name="title_welcome_image">Android Agent Mode</string>
+    <string name="swipe">Swipe To Proceed</string>
+<!--     <string name="swipeBegin">Swipe To </string> -->
+    <string name="title_activity_phone_call_settings">PhoneCallSettings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_location_ph_settings">Location Settings</string>
+    <string name="lbl_latitude">Latitude: </string>
+    <string name="lbl_speed">Speed: </string>
+    <string name="lbl_longitude">Longitude: </string>
+    <string name="lbl_action">Actions: </string>
+    <string name="lbl_message">Message: </string>
+    <string name="title_location_calendar_settings">Calendar Settings</string>
+    <string name="lbl_name">Contact: </string>
+    <string name="title_time_settings">Time Settings</string>
+    <string name="lbl_startime">StartTime: </string>
+    <string name="lbl_endtime">EndTime: </string>
+    <string name="action_prompt">Choose a action</string>
+    <string name="contact_prompt">Choose a contact</string>
+    <string name="title_activity_message_settings">MessageSettings</string>
+	<string name="lbl_savetime">Save Time</string>
+	<string name="lbl_cancel">Cancel</string>
+	<string name="title_motion_ph_settings">Motion Settings</string>
+</resources>

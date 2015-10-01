@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtMessage"
+        android:layout_below="@+id/textLocationHeading"
+        android:layout_marginTop="30dp"
+        android:text="@string/lbl_speed"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtSpeedMessage"
+        android:layout_alignBottom="@+id/edtSpeedMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/lbl_message"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtSpeedGreater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSpeed"
+        android:layout_alignBottom="@+id/txtSpeed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtSpeedMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtSpeedGreater"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtSpeedMessage"
+        android:layout_alignLeft="@+id/edtSpeedMessage" >
+
+        <RadioButton
+            android:id="@+id/rdbPHLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slower Than" />
+
+        <RadioButton
+            android:id="@+id/rdbPHBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faster Than" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnMotionSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/actionMotionSpinner"
+        android:layout_below="@+id/actionMotionSpinner"
+        android:layout_marginTop="20dp"
+        android:text="Save Plan" />
+
+    <Spinner
+        android:id="@+id/actionMotionSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtSpeedMessage"
+        android:layout_below="@+id/edtSpeedMessage"
+        android:layout_marginTop="16dp"
+        android:entries="@array/callactions"
+        android:prompt="@string/action_prompt" />
+
+    <TextView
+        android:id="@+id/txtAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actionMotionSpinner"
+        android:layout_toLeftOf="@+id/textLocationHeading"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textLocationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@+id/txtSpeed"
+        android:text="@string/title_motion_ph_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_toLeftOf="@+id/textLocationHeading"
+        android:text="Compare:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

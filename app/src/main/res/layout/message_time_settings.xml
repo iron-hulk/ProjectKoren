@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:configChanges="orientation" >
+    
+    <TextView
+        android:id="@+id/txtMsgTimeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/title_time_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtMsgStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgStartTime"
+        android:layout_toLeftOf="@+id/edtMsgStartTime"
+        android:text="@string/lbl_startime"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/edtMsgStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtMsgTimeHeading"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="22dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtMsgEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgEndTime"
+        android:layout_toLeftOf="@+id/edtMsgEndTime"
+        android:text="@string/lbl_endtime"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     <EditText
+        android:id="@+id/edtMsgEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtMsgStartTime"
+        android:layout_marginRight="18dp"
+        android:ems="10" />
+
+     
+     <TextView
+        android:id="@+id/txtMsgTimeAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actionMsgTimeSpinner"
+        android:layout_toLeftOf="@+id/actionMsgTimeSpinner"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/txtMsgTimeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgTimeMessage"
+        android:layout_toLeftOf="@+id/edtMsgTimeMessage"
+        android:text="@string/lbl_message"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     <EditText
+        android:id="@+id/edtMsgTimeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/actionMsgTimeSpinner"
+        android:layout_marginRight="18dp"
+        android:ems="10" />
+
+     <Button
+         android:id="@+id/btnMsgTimeSave"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/txtMsgTimeMessage"
+         android:layout_marginTop="29dp"
+         android:layout_toRightOf="@+id/txtMsgTimeMessage"
+         android:text="Save Plan" />
+
+     <Spinner
+         android:id="@+id/actionMsgTimeSpinner"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/edtMsgEndTime"
+         android:layout_below="@+id/edtMsgEndTime"
+         android:entries="@array/messageactions"
+         android:prompt="@string/action_prompt" />
+
+
+</RelativeLayout>

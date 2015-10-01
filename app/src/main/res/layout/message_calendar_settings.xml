@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/txtMsgPersonHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/title_location_calendar_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TextView
+        android:id="@+id/txtPersonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actionMsgCalSpinner"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/actionMsgCalSpinner"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <Button
+         android:id="@+id/btnSaveMessageCalPlan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/actionMsgCalSpinner"
+         android:layout_centerVertical="true"
+         android:text="Save Plan" />
+
+     <Spinner
+         android:id="@+id/actionMsgCalSpinner"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/btnSaveMessageCalPlan"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="17dp"
+         android:layout_marginRight="21dp"
+         android:entries="@array/calendareactions"
+         android:prompt="@string/action_prompt" />
+     
+</RelativeLayout>

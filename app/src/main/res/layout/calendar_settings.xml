@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/txtMsgPersonHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/title_location_calendar_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/btnSaveCallCalPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionPersonSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Save Plan" />
+
+    <Spinner
+        android:id="@+id/actionPersonSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSaveCallCalPlan"
+        android:layout_below="@+id/txtMsgPersonHeading"
+        android:layout_marginTop="42dp"
+        android:entries="@array/calendareactions"
+        android:prompt="@string/action_prompt" />
+
+    <TextView
+        android:id="@+id/txtPersonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actionPersonSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/actionPersonSpinner"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

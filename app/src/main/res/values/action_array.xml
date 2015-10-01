@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="callactions">
+		<item>Silence</item>
+		<item>End Call</item>
+		<item>Ring</item>
+		<item>Vibrate</item>
+	</string-array>
+	
+    <string-array name="messageactions">
+		<item>Silence</item>
+		<item>Ring</item>
+		<item>Vibrate</item>
+	</string-array>
+	
+    <string-array name="calendareactions">
+		<item>Silence</item>
+		<item>Urgently Notify Person</item>
+		<item>Vibrate</item>
+	</string-array>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtMMotionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtMMotionSpeedMessage"
+        android:layout_alignBottom="@+id/edtMMotionSpeedMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/lbl_message"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtMMotionSpeedMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtMMotionSpeedGreater"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioMMotionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtMMotionSpeedMessage"
+        android:layout_alignLeft="@+id/edtMMotionSpeedMessage" >
+
+        <RadioButton
+            android:id="@+id/rdbMMotionPHLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slower Than" />
+
+        <RadioButton
+            android:id="@+id/rdbMMotionPHBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faster Than" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnMMotionSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/actionMMotionSpinner"
+        android:layout_below="@+id/actionMMotionSpinner"
+        android:layout_marginTop="20dp"
+        android:text="Save Plan" />
+
+    <Spinner
+        android:id="@+id/actionMMotionSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtMMotionSpeedMessage"
+        android:layout_below="@+id/edtMMotionSpeedMessage"
+        android:layout_marginTop="16dp"
+        android:entries="@array/messageactions"
+        android:prompt="@string/action_prompt" />
+
+    <TextView
+        android:id="@+id/txtMMotionAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actionMMotionSpinner"
+        android:layout_toLeftOf="@+id/textLocationHeading"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textLocationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@+id/txtMMotionSpeed"
+        android:text="@string/title_motion_ph_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioMMotionGroup"
+        android:layout_toLeftOf="@+id/textLocationHeading"
+        android:text="Compare:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtMMotionSpeedGreater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioMMotionGroup"
+        android:layout_alignLeft="@+id/textLocationHeading"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtMMotionSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtMMotionSpeedGreater"
+        android:layout_alignBottom="@+id/edtMMotionSpeedGreater"
+        android:layout_alignRight="@+id/txtMMotionMessage"
+        android:text="@string/lbl_speed"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

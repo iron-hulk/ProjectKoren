@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:id="@+id/txtActionPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/title_activity_action_plan"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMessages"
+        android:layout_alignRight="@+id/txtActionPlan"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/android_logo" />
+
+    <ImageButton
+        android:id="@+id/btnCalls"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/txtSwipe"
+        android:background="#C5EAF8"
+        android:src="@drawable/ic_call" />
+
+    <ImageButton
+        android:id="@+id/btnMessages"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="114dp"
+        android:layout_toLeftOf="@+id/txtSwipe"
+        android:background="#E2F0B6"
+        android:src="@drawable/ic_action" />
+
+     <TextView
+        android:id="@+id/txtSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingTop="30dp"
+        android:text="@string/swipe"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

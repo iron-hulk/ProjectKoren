@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/textMsgLocationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/title_location_ph_settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtMsgLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgLatitude"
+        android:layout_toLeftOf="@+id/edtMsgLatitude"
+        android:text="@string/lbl_latitude"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/edtMsgLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textMsgLocationHeading"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="22dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtMsgLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgLongitude"
+        android:layout_toLeftOf="@+id/edtMsgLongitude"
+        android:text="@string/lbl_longitude"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     <EditText
+        android:id="@+id/edtMsgLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtMsgLatitude"
+        android:layout_marginRight="18dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtLocationMsgAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actionLocationMsgSpinner"
+        android:layout_toLeftOf="@+id/actionLocationMsgSpinner"
+        android:text="@string/lbl_action"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtLocationMsgMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtMsgLocationMessage"
+        android:layout_toLeftOf="@+id/edtMsgLocationMessage"
+        android:text="@string/lbl_message"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     <EditText
+        android:id="@+id/edtMsgLocationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/actionLocationMsgSpinner"
+        android:layout_marginRight="18dp"
+        android:ems="10" />
+
+     <Button
+         android:id="@+id/btnMsgLocationSave"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/txtLocationMsgMessage"
+         android:layout_marginTop="29dp"
+         android:layout_toRightOf="@+id/txtLocationMsgMessage"
+         android:text="Save Plan" />
+
+     <Spinner
+         android:id="@+id/actionLocationMsgSpinner"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/edtMsgLongitude"
+         android:layout_below="@+id/edtMsgLongitude"
+         android:entries="@array/messageactions"
+         android:prompt="@string/action_prompt" />
+
+</RelativeLayout>
