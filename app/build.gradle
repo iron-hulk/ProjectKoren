@@ -12,7 +12,9 @@ android {
     defaultConfig {
         applicationId "com.mobileagent.app"
         minSdkVersion 18
-        targetSdkVersion 18
+        targetSdkVersion 21
+        // Enabling multidex support.
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -24,7 +26,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:18.0.0'
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:multidex:1.0.0'
     compile files('libs/android-support-v13.jar')
 }

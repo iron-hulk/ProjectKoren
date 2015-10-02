@@ -43,7 +43,6 @@ public class ScheduleContext {
     }
 
     private void buildCalendarEvents(String calendarID){
-    	
         Uri events = Uri.parse("content://com.android.calendar/events");
         String[] eventProjection = new String[]{"calendar_id","organizer","eventLocation","title","dtstart","dtend"};
 
@@ -91,8 +90,7 @@ public class ScheduleContext {
     }
     
     private String getDate(long milliSeconds) {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "dd/MM/yyyy hh:mm:ss a");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss a");
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(milliSeconds);
         return formatter.format(calendar.getTime());
