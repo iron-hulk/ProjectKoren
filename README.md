@@ -1,6 +1,7 @@
-# ProjectKoren
-The Idea behind project Koren is to build a Context aware and reactive mobile agent. 
-To break it down essentially I want my device to become more intelligent. 
+# KOREN Mobile Agent
+The Idea behind project Koren is to build a Context aware and reactive mobile agent. This fits into a larger ecosystem of technologies to be used to better my life.
+
+To break it down essentially I want my device to become more intelligent, using it to aggregate information -> send it off to a central repo to process -> learn from it -> use it to handle events in my life more intelligently.
 
 In my everyday life I would like it to handle logical situations like I am in a meeting and a call comes through, what should my device do. 
 
