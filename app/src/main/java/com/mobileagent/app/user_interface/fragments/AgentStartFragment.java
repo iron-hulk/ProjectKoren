@@ -1,10 +1,11 @@
-package com.mobileagent.app.fragments;
+package com.mobileagent.app.user_interface.fragments;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import android.app.AlertDialog;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -13,7 +14,6 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,8 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mobileagent.app.R;
-import com.mobileagent.app.reactive_planning_agents.CallAgent;
-import com.mobileagent.app.reactive_planning_agents.MessageAgent;
+import com.mobileagent.app.services.reactive_planning_agents.CallAgent;
+import com.mobileagent.app.services.reactive_planning_agents.MessageAgent;
 import com.mobileagent.app.repository.DBService;
 import com.mobileagent.app.repository.impl.CallEventImpl;
 import com.mobileagent.app.repository.impl.ContextServiceImpl;

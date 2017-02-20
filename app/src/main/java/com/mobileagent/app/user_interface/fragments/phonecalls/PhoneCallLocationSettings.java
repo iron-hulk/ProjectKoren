@@ -1,4 +1,4 @@
-package com.mobileagent.app.fragments.phonecalls;
+package com.mobileagent.app.user_interface.fragments.phonecalls;
 
 import java.util.HashMap;
 
@@ -17,9 +17,7 @@ import android.widget.Toast;
 import com.mobileagent.app.R;
 import com.mobileagent.app.repository.DBService;
 import com.mobileagent.app.repository.impl.CallEventImpl;
-import com.mobileagent.app.repository.impl.MessageEventImpl;
 import com.mobileagent.app.utilities.CallEvent;
-import com.mobileagent.app.utilities.MessageEvent;
 import com.mobileagent.app.utilities.factory.AppFactory;
 
 

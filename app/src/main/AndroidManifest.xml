@@ -4,11 +4,8 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="18" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -18,12 +15,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/agent"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         >
         <activity
-            android:name=".HomeActivity"
+            android:name=".user_interface.HomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="orientation"
@@ -39,23 +35,15 @@
         <service
             android:name=".services.event_listeners.ReceiverService"
             android:enabled="true" />
-<!--         <service -->
-<!--             android:name="com.mobileagent.app.services.event_listeners.NotificationLR" -->
-<!--             android:label="NotificationLR" -->
-<!--             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" > -->
-<!--             <intent-filter> -->
-<!--                 <action android:name="android.service.notification.NotificationListenerService" /> -->
-<!--             </intent-filter> -->
-<!--         </service> -->
 
         <activity
-            android:name=".PhoneCallSettings"
+            android:name=".user_interface.PhoneCallSettings"
             android:screenOrientation="portrait"
             android:configChanges="orientation"
             android:label="@string/title_activity_phone_call_settings" >
         </activity>
         <activity
-            android:name=".MessageSettings"
+            android:name=".user_interface.MessageSettings"
             android:screenOrientation="portrait"
             android:configChanges="orientation"
             android:label="@string/title_activity_message_settings" >

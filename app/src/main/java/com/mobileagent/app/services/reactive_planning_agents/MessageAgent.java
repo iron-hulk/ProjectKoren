@@ -1,4 +1,4 @@
-package com.mobileagent.app.reactive_planning_agents;
+package com.mobileagent.app.services.reactive_planning_agents;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -52,8 +52,8 @@ public class MessageAgent implements Observer {
 	}
 	
 	private void setHighestPriorityPlan(MessageEvent currentPlan){
-		Log.d("MESSAGEAGENT","setHighestPriorityPlan()");
-		Log.d("MESSAGEAGENT WHATS THE PLANS?",currentPlan.toString());
+		Log.d("MESSAGEAGENT", "setHighestPriorityPlan()");
+		Log.d("MESSAGEAGENT", "WHATS THE PLANS?" + currentPlan.toString());
 		
 		if(currentPlan.getAttribute().equals("calendar")){
 			Log.d("MESSAGE AGENT PLAN", "CALENDAR PLAN SET");
