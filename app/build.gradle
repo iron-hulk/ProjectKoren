@@ -1,17 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 18
+    compileSdkVersion 16
     buildToolsVersion "22.0.1"
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-    }
 
     defaultConfig {
         applicationId "com.mobileagent.app"
-        minSdkVersion 18
+        minSdkVersion 16
         targetSdkVersion 21
         // Enabling multidex support.
         multiDexEnabled true

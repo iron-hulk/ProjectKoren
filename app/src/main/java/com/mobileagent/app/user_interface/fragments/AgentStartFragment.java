@@ -1,4 +1,4 @@
-package com.mobileagent.app.fragments;
+package com.mobileagent.app.user_interface.fragments;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -24,8 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mobileagent.app.R;
-import com.mobileagent.app.reactive_planning_agents.CallAgent;
-import com.mobileagent.app.reactive_planning_agents.MessageAgent;
+import com.mobileagent.app.services.reactive_planning_agents.CallAgent;
+import com.mobileagent.app.services.reactive_planning_agents.MessageAgent;
 import com.mobileagent.app.repository.DBService;
 import com.mobileagent.app.repository.impl.CallEventImpl;
 import com.mobileagent.app.repository.impl.ContextServiceImpl;

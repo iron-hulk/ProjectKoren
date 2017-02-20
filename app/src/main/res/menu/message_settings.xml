@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.mobileagent.app.MessageSettings" >
+    tools:context="com.mobileagent.app.user_interface.MessageSettings" >
 
     <item
         android:id="@+id/action_settings"

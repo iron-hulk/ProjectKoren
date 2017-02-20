@@ -1,4 +1,4 @@
-package com.mobileagent.app.fragments.messaging;
+package com.mobileagent.app.user_interface.fragments.messaging;
 
 import java.util.HashMap;
 

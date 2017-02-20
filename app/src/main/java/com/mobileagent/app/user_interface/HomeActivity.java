@@ -1,4 +1,4 @@
-package com.mobileagent.app;
+package com.mobileagent.app.user_interface;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -10,9 +10,10 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.mobileagent.app.fragments.ActionPlanSelectFragment;
-import com.mobileagent.app.fragments.AgentStartFragment;
-import com.mobileagent.app.fragments.WelcomeFragment;
+import com.mobileagent.app.R;
+import com.mobileagent.app.user_interface.fragments.ActionPlanSelectFragment;
+import com.mobileagent.app.user_interface.fragments.AgentStartFragment;
+import com.mobileagent.app.user_interface.fragments.WelcomeFragment;
 
 public class HomeActivity extends Activity {
 

@@ -1,4 +1,4 @@
-package com.mobileagent.app;
+package com.mobileagent.app.user_interface;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -11,11 +11,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.mobileagent.app.fragments.messaging.MessageMotionFragment;
-import com.mobileagent.app.fragments.phonecalls.PhoneCallCalendarSettings;
-import com.mobileagent.app.fragments.phonecalls.PhoneCallLocationSettings;
-import com.mobileagent.app.fragments.phonecalls.PhoneCallMotionSettings;
-import com.mobileagent.app.fragments.phonecalls.PhoneCallTimeSettings;
+import com.mobileagent.app.R;
+import com.mobileagent.app.user_interface.fragments.phonecalls.PhoneCallCalendarSettings;
+import com.mobileagent.app.user_interface.fragments.phonecalls.PhoneCallLocationSettings;
+import com.mobileagent.app.user_interface.fragments.phonecalls.PhoneCallMotionSettings;
+import com.mobileagent.app.user_interface.fragments.phonecalls.PhoneCallTimeSettings;
 
 public class PhoneCallSettings extends FragmentActivity implements ActionBar.TabListener{
     

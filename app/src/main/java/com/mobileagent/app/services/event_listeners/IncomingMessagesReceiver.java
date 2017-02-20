@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
 
-import com.mobileagent.app.reactive_planning_agents.MessageAgent;
+import com.mobileagent.app.services.reactive_planning_agents.MessageAgent;
 import com.mobileagent.app.services.event_listeners.message_handler.DefaultMessageHandler;
 import com.mobileagent.app.services.event_listeners.message_handler.RingMessageHandler;
 import com.mobileagent.app.services.event_listeners.message_handler.SilenceMessageHandler;

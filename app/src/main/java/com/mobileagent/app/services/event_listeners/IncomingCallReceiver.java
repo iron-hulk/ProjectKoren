@@ -14,8 +14,8 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.android.internal.telephony.ITelephony;
-import com.mobileagent.app.fragments.AgentStartFragment;
-import com.mobileagent.app.reactive_planning_agents.CallAgent;
+import com.mobileagent.app.user_interface.fragments.AgentStartFragment;
+import com.mobileagent.app.services.reactive_planning_agents.CallAgent;
 
 /**
  * Created by ironhulk on 2014/08/04.
