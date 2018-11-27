@@ -23,4 +23,5 @@ android {
 dependencies {
     compile 'com.android.support:multidex:1.0.0'
     compile files('libs/android-support-v13.jar')
+    compile 'com.github.satyan:sugar:1.3'
 }
