@@ -85,7 +85,7 @@ public class LocationContext {
                 currentContext.put("country", addressList.get(0).getCountryName());
                 currentContext.put("latitude", ""+location.getLatitude());
                 currentContext.put("longitude",""+location.getLongitude());
-                currentContext.put("time_since_update", "" + location.getElapsedRealtimeNanos()/1000/1000/1000/60);
+//                currentContext.put("time_since_update", "" + location.getElapsedRealtimeNanos()/1000/1000/1000/60);
                 currentContext.put("accuracy", "" + location.getAccuracy());
             	currentContext.put("speed", "" + location.getSpeed());
             }else{
@@ -94,7 +94,7 @@ public class LocationContext {
                 currentContext.put("country", new String());
                 currentContext.put("latitude", ""+location.getLatitude());
                 currentContext.put("longitude",""+location.getLongitude());
-                currentContext.put("time_since_update", "" + location.getElapsedRealtimeNanos()/1000/1000/1000/60);
+//                currentContext.put("time_since_update", "" + location.getElapsedRealtimeNanos()/1000/1000/1000/60);
                 currentContext.put("accuracy", "" + location.getAccuracy());
             	currentContext.put("speed", "" + location.getSpeed());
             }

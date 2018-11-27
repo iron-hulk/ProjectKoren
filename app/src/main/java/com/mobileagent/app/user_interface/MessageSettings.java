@@ -1,4 +1,4 @@
-package com.mobileagent.app;
+package com.mobileagent.app.user_interface;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -11,10 +11,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.mobileagent.app.fragments.messaging.MessageCalendarSettings;
-import com.mobileagent.app.fragments.messaging.MessageLocationSettings;
-import com.mobileagent.app.fragments.messaging.MessageMotionFragment;
-import com.mobileagent.app.fragments.messaging.MessageTimeSettings;
+import com.mobileagent.app.R;
+import com.mobileagent.app.user_interface.fragments.messaging.MessageCalendarSettings;
+import com.mobileagent.app.user_interface.fragments.messaging.MessageLocationSettings;
+import com.mobileagent.app.user_interface.fragments.messaging.MessageMotionFragment;
+import com.mobileagent.app.user_interface.fragments.messaging.MessageTimeSettings;
 
 public class MessageSettings extends FragmentActivity implements ActionBar.TabListener{
 

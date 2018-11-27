@@ -37,3 +37,6 @@ ehthumbs.db
 Thumbs.db
 
 import-summary.txt
+.idea/copyright/
+.idea/markdown-navigator/
+.idea/runConfigurations.xml

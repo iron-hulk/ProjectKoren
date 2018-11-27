@@ -1,7 +1,7 @@
 package com.mobileagent.app.services.event_listeners.message_handler;
 
-import com.mobileagent.app.fragments.AgentStartFragment;
-import com.mobileagent.app.reactive_planning_agents.MessageAgent;
+import com.mobileagent.app.user_interface.fragments.AgentStartFragment;
+import com.mobileagent.app.services.reactive_planning_agents.MessageAgent;
 
 import android.content.Context;
 import android.media.AudioManager;

@@ -1,4 +1,4 @@
-package com.mobileagent.app.fragments;
+package com.mobileagent.app.user_interface.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;

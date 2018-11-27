@@ -7,8 +7,8 @@ import android.os.Message;
 import android.telephony.SmsManager;
 import android.util.Log;
 
-import com.mobileagent.app.fragments.AgentStartFragment;
-import com.mobileagent.app.reactive_planning_agents.MessageAgent;
+import com.mobileagent.app.user_interface.fragments.AgentStartFragment;
+import com.mobileagent.app.services.reactive_planning_agents.MessageAgent;
 
 public class SilenceMessageHandler extends MessageHandler {
 
